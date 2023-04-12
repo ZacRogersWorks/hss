@@ -247,7 +247,6 @@ export default function Home() {
           <div className={styles.sectionContainer}>
             <h2>Request Information</h2>
             <a href="tel:8448896757">(844) UV-WORKS</a>
-            <Link href="/success">Success Link</Link>
             <form
               className={styles.form}
               name="contact"
@@ -262,7 +261,7 @@ export default function Home() {
                   <input name="bot-field" />
                 </label>
               </p>
-              {/* <input type="hidden" name="form-name" value="contact" /> */}
+              <input type="hidden" name="form-name" value="contact" />
               <div className={styles.inputLine}>
                 <div className={styles.input}>
                   <label for="name">Name</label>
@@ -279,7 +278,7 @@ export default function Home() {
                   <input type="tel" id="phone" name="phone" />
                 </div>
                 <div className={styles.input}>
-                  <label for="phone">Facility</label>
+                  <label for="facility">Facility</label>
                   <input type="text" id="facility" name="facility" />
                 </div>
               </div>
@@ -295,7 +294,7 @@ export default function Home() {
               </div>
               <div className={styles.stateZip}>
                 <div className={styles.input}>
-                  <label for="State">State</label>
+                  <label for="state">State</label>
                   <input type="text" id="state" name="state" />
                 </div>
                 <div className={styles.input}>
@@ -305,7 +304,7 @@ export default function Home() {
               </div>
               <div className={styles.input}>
                 <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea id="message" name="message"></textarea>
               </div>
               <button className={styles.button} type="submit">
                 SEND
