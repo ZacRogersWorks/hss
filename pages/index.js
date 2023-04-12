@@ -16,13 +16,28 @@ export default function Home() {
           content="Providing solutions for a cleaner and safer workplace.  "
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <div className={styles.banner}>
         <img src="/images/HSPA.png" alt="HSPA 2023" />
-        <p>
-        See You at HSPA Nashville 2023 - Booth #1154
-        </p>
+        <p>See You at HSPA Nashville 2023 - Booth #1154</p>
       </div>
       <main className={styles.main}>
         <section className={styles.hero}>
@@ -163,7 +178,13 @@ export default function Home() {
         <section className={styles.products}>
           <div className={styles.sectionContainer}>
             <h2>AUVS Systems</h2>
-            <a className={styles.auvs} href="https://www.advanceduvsystems.com/" target="_blank">View more info here</a>
+            <a
+              className={styles.auvs}
+              href="https://www.advanceduvsystems.com/"
+              target="_blank"
+            >
+              View more info here
+            </a>
             <div className={styles.productList}>
               <div className={styles.product}>
                 <h3>AUVS UV Box</h3>
@@ -251,24 +272,24 @@ export default function Home() {
                 </div>
               </div>
               <div className={styles.inputLine}>
-              <div className={styles.input}>
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" />
-              </div>
-              <div className={styles.input}>
-                <label for="phone">Facility</label>
-                <input type="text" id="facility" name="facility" />
-              </div>
+                <div className={styles.input}>
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+                <div className={styles.input}>
+                  <label for="phone">Facility</label>
+                  <input type="text" id="facility" name="facility" />
+                </div>
               </div>
               <div className={styles.inputLine}>
-              <div className={styles.input}>
-                <label for="address">Address</label>
-                <input type="text" id="address" name="address" />
-              </div>
-              <div className={styles.input}>
-                <label for="city">City</label>
-                <input type="text" id="city" name="city" />
-              </div>
+                <div className={styles.input}>
+                  <label for="address">Address</label>
+                  <input type="text" id="address" name="address" />
+                </div>
+                <div className={styles.input}>
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" />
+                </div>
               </div>
               <div className={styles.stateZip}>
                 <div className={styles.input}>
