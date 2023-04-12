@@ -252,15 +252,15 @@ export default function Home() {
               name="contact"
               method="POST"
               data-netlify="true"
-              netlify-honeypot="bot-field"
-              // action="/success"
+              // netlify-honeypot="bot-field"
+              action="/success"
             >
-              <p className={styles.hidden}>
+              {/* <p className={styles.hidden}>
                 <label>
                   Don’t fill this out if you’re human:
                   <input name="bot-field" />
                 </label>
-              </p>
+              </p> */}
               <input type="hidden" name="form-name" value="contact" />
               <div className={styles.inputLine}>
                 <div className={styles.input}>
