@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { Carousel } from "react-bootstrap";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -246,13 +247,14 @@ export default function Home() {
           <div className={styles.sectionContainer}>
             <h2>Request Information</h2>
             <a href="tel:8448896757">(844) UV-WORKS</a>
+            <Link href="/success">Success Link</Link>
             <form
               className={styles.form}
               name="contact"
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              // action="/success"
+              action="/success"
             >
               <p className={styles.hidden}>
                 <label>
@@ -260,7 +262,7 @@ export default function Home() {
                   <input name="bot-field" />
                 </label>
               </p>
-              <input type="hidden" name="form-name" value="contact" />
+              {/* <input type="hidden" name="form-name" value="contact" /> */}
               <div className={styles.inputLine}>
                 <div className={styles.input}>
                   <label for="name">Name</label>
