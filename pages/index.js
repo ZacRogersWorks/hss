@@ -256,7 +256,7 @@ export default function Home() {
             >
               <p className={styles.hidden}>
                 <label>
-                  Don’t fill this out if you’re human:{" "}
+                  Don’t fill this out if you’re human:
                   <input name="bot-field" />
                 </label>
               </p>
