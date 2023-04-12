@@ -249,7 +249,7 @@ export default function Home() {
             <a href="tel:8448896757">(844) UV-WORKS</a>
             <form
               className={styles.form}
-              name="contact"
+              name="contact-form"
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
@@ -257,11 +257,11 @@ export default function Home() {
             >
               <p className={styles.hidden}>
                 <label>
-                  Don’t fill this out if you’re human:
+                  Disregard if you are human:
                   <input name="bot-field" />
                 </label>
               </p>
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="contact-form" />
               <div className={styles.inputLine}>
                 <div className={styles.input}>
                   <label for="name">Name</label>
