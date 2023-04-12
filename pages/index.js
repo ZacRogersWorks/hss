@@ -303,7 +303,7 @@ export default function Home() {
               </div>
               <div className={styles.input}>
                 <label for="message">Message</label>
-                <textarea></textarea>
+                <textarea name="message" id="message"></textarea>
               </div>
               <button className={styles.button} type="submit">
                 SEND
