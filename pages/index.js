@@ -252,15 +252,15 @@ export default function Home() {
               name="contact"
               method="POST"
               data-netlify="true"
-              // netlify-honeypot="bot-field"
+              netlify-honeypot="bot-field"
               action="/success"
             >
-              {/* <p className={styles.hidden}>
+              <p className={styles.hidden}>
                 <label>
                   Don’t fill this out if you’re human:
                   <input name="bot-field" />
                 </label>
-              </p> */}
+              </p>
               <input type="hidden" name="form-name" value="contact" />
               <div className={styles.inputLine}>
                 <div className={styles.input}>
@@ -272,7 +272,7 @@ export default function Home() {
                   <input type="email" id="email" name="email" />
                 </div>
               </div>
-              <div className={styles.inputLine}>
+              {/* <div className={styles.inputLine}>
                 <div className={styles.input}>
                   <label for="phone">Phone</label>
                   <input type="tel" id="phone" name="phone" />
@@ -301,7 +301,7 @@ export default function Home() {
                   <label for="zip">Zip</label>
                   <input type="number" id="zip" name="zip" />
                 </div>
-              </div>
+              </div> */}
               <div className={styles.input}>
                 <label for="message">Message</label>
                 <textarea id="message" name="message"></textarea>
