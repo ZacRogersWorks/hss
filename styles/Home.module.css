@@ -1,3 +1,7 @@
+.main {
+  font-family: 'usual', sans-serif;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -91,10 +95,16 @@ margin-top: 3rem;
   align-items: center;
 }
 
+.contact h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .contact a {
   color: white;
   font-weight: bold;
   margin: 1rem 0 2rem;
+  font-size: 1rem;
 }
 
 .hidden {

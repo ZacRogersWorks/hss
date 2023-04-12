@@ -73,19 +73,40 @@ export default function Home() {
                 <Carousel.Item>
                   <img
                     className="w-100"
-                    src="./images/passthrough_1.webp"
+                    src="./images/passthrough_1.jpg"
                     alt="Passthrough"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="w-100"
-                    src="./images/passthrough_2.webp"
+                    src="./images/passthrough_2.jpg"
+                    alt="Passthrough"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="w-100"
+                    src="./images/passthrough_3.jpg"
+                    alt="Passthrough"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="w-100"
+                    src="./images/passthrough_4.jpg"
+                    alt="Passthrough"
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    className="w-100"
+                    src="./images/passthrough_5.jpg"
                     alt="Passthrough"
                   />
                 </Carousel.Item>
               </Carousel>
-              <a className={styles.button} href="" target="_blank">
+              <a className={styles.button} href="./HSS_Brochure.pdf" target="_blank">
                 DOWNLOAD BROCHURE
               </a>
             </div>
@@ -95,19 +116,19 @@ export default function Home() {
                 <Carousel.Item>
                   <img
                     className="w-100"
-                    src="./images/passthrough_1.webp"
+                    src="./images/tabletop_1.jpg"
                     alt="Passthrough"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="w-100"
-                    src="./images/passthrough_2.webp"
+                    src="./images/tabletop_2.jpg"
                     alt="Passthrough"
                   />
                 </Carousel.Item>
               </Carousel>
-              <a className={styles.button} href="" target="_blank">
+              <a className={styles.button} href="./HSS_Brochure.pdf" target="_blank">
                 DOWNLOAD BROCHURE
               </a>
             </div>
@@ -118,48 +139,28 @@ export default function Home() {
           <div className={styles.productList}>
             <div className={styles.product}>
               <h3>AUVS Box</h3>
-              <Carousel>
-                <Carousel.Item>
                   <img
                     className="w-100"
-                    src="./images/passthrough_1.webp"
+                    src="./images/UV_Box_1.jpg"
                     alt="Passthrough"
                   />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="w-100"
-                    src="./images/passthrough_2.webp"
-                    alt="Passthrough"
-                  />
-                </Carousel.Item>
-              </Carousel>
+
               <p className={styles.tag}>
                 99.9997% Coronavirus Disinfection in 55 Seconds!
               </p>
-              <a className={styles.button} href="" target="_blank">
+              <a className={styles.button} href="./AUVS_Box_Brochure.pdf" target="_blank">
                 DOWNLOAD BROCHURE
               </a>
             </div>
             <div className={styles.product}>
               <h3>AUVX Cube</h3>
-              <Carousel>
-                <Carousel.Item>
+
                   <img
                     className="w-100"
-                    src="./images/passthrough_1.webp"
+                    src="./images/UV_Cube_1.jpg"
                     alt="Passthrough"
                   />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="w-100"
-                    src="./images/passthrough_2.webp"
-                    alt="Passthrough"
-                  />
-                </Carousel.Item>
-              </Carousel>
-              <a className={styles.button} href="" target="_blank">
+              <a className={styles.button} href="./AUVS_Cube_Brochure.pdf" target="_blank">
                 DOWNLOAD BROCHURE
               </a>
             </div>
