@@ -253,7 +253,7 @@ export default function Home() {
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              action="/success"
+              // action="/success"
             >
               <p className={styles.hidden}>
                 <label>
