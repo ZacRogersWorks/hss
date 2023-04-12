@@ -18,6 +18,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={styles.banner}>
+        <img src="/images/HSPA.png" alt="HSPA 2023" />
+        <p>
+        See You at HSPA Nashville 2023 - Booth #1154
+        </p>
+      </div>
       <main className={styles.main}>
         <section className={styles.hero}>
           <div className={styles.sectionContainer}>
