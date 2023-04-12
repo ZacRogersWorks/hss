@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from "../styles/Home.module.css";
+import Link from 'next/link';
 
 const success = () => {
   return (
     <div className={styles.success}>
       Email sent successfully!
-      <a href="/">Back to Home</a>
+      <Link href="/">Back to Home</Link>
     </div>
   )
 }
