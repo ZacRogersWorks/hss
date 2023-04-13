@@ -8,6 +8,22 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const myForm = e.target;
+    const formData = new FormData(myForm)
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded"},
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then(() => NavigationPreloadManager("/success"))
+    .catch((error) => alert(error));
+  }
+
   return (
     <>
       <Head>
@@ -253,7 +269,7 @@ export default function Home() {
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              action="/success"
+              onSubmit={handleSubmit}
             >
               <p className={styles.hidden}>
                 <label htmlFor="bot-field">
