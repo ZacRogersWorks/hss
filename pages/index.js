@@ -269,7 +269,7 @@ export default function Home() {
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              onSubmit={handleSubmit}
+              action="/success"
             >
               <p className={styles.hidden}>
                 <label htmlFor="bot-field">
