@@ -256,7 +256,7 @@ export default function Home() {
               action="/success"
             >
               <p className={styles.hidden}>
-                <label>
+                <label htmlFor="bot-field">
                   Disregard if you are human:
                   <input name="bot-field" />
                 </label>
