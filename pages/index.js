@@ -259,18 +259,18 @@ export default function Home() {
             <form
               className={styles.form}
               name="contact-form"
-              method="POST"
-              // data-netlify="true"
-              // netlify-honeypot="bot-field"
-              action="https://formspree.io/f/mlekooyr"
+              // method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/success"
             >
-              {/* <p className={styles.hidden}>
+              <p className={styles.hidden}>
                 <label htmlFor="bot-field">
                   Disregard if you are human:
                   <input name="bot-field" />
                 </label>
               </p>
-              <input type="hidden" name="form-name" value="contact-form" /> */}
+              <input type="hidden" name="form-name" value="contact-form" />
               <div className={styles.inputLine}>
                 <div className={styles.input}>
                   <label htmlFor="name">Name</label>
