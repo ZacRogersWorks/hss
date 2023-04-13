@@ -264,46 +264,46 @@ export default function Home() {
               <input type="hidden" name="form-name" value="contact-form" />
               <div className={styles.inputLine}>
                 <div className={styles.input}>
-                  <label for="name">Name</label>
+                  <label htmlFor="name">Name</label>
                   <input type="text" id="name" name="name" />
                 </div>
                 <div className={styles.input}>
-                  <label for="email">Email</label>
+                  <label htmlFor="email">Email</label>
                   <input type="email" id="email" name="email" />
                 </div>
               </div>
               <div className={styles.inputLine}>
                 <div className={styles.input}>
-                  <label for="phone">Phone</label>
+                  <label htmlFor="phone">Phone</label>
                   <input type="tel" id="phone" name="phone" />
                 </div>
                 <div className={styles.input}>
-                  <label for="facility">Facility</label>
+                  <label htmlFor="facility">Facility</label>
                   <input type="text" id="facility" name="facility" />
                 </div>
               </div>
               <div className={styles.inputLine}>
                 <div className={styles.input}>
-                  <label for="address">Address</label>
+                  <label htmlFor="address">Address</label>
                   <input type="text" id="address" name="address" />
                 </div>
                 <div className={styles.input}>
-                  <label for="city">City</label>
+                  <label htmlFor="city">City</label>
                   <input type="text" id="city" name="city" />
                 </div>
               </div>
               <div className={styles.stateZip}>
                 <div className={styles.input}>
-                  <label for="state">State</label>
+                  <label htmlFor="state">State</label>
                   <input type="text" id="state" name="state" />
                 </div>
                 <div className={styles.input}>
-                  <label for="zip">Zip</label>
+                  <label htmlFor="zip">Zip</label>
                   <input type="number" id="zip" name="zip" />
                 </div>
               </div>
               <div className={styles.input}>
-                <label for="message">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea id="message" name="message"></textarea>
               </div>
               <button className={styles.button} type="submit">
