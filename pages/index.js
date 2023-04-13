@@ -195,13 +195,6 @@ export default function Home() {
         <section className={styles.products}>
           <div className={styles.sectionContainer}>
             <h2>AUVS Systems</h2>
-            <a
-              className={styles.auvs}
-              href="https://www.advanceduvsystems.com/"
-              target="_blank"
-            >
-              View more info here
-            </a>
             <div className={styles.productList}>
               <div className={styles.product}>
                 <h3>AUVS UV Box</h3>
