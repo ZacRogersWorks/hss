@@ -9,21 +9,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const myForm = e.target;
-    const formData = new FormData(myForm)
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded"},
-      body: new URLSearchParams(formData).toString(),
-    })
-    .then(() => NavigationPreloadManager("/success"))
-    .catch((error) => alert(error));
-  }
-
   return (
     <>
       <Head>
@@ -53,8 +38,14 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <div className={styles.banner}>
+        <div className={styles.bannerItem}>
         <img src="/images/HSPA.png" alt="HSPA 2023" />
         <p>See You at HSPA Nashville 2023 - Booth #1154</p>
+        </div>
+        <div className={styles.podcast}>
+          <p>Listen to our feature on</p>
+          <a className={styles.podcastLink}href="https://traffic.libsyn.com/beyondclean/BC_HSS_VS1.mp3" target="_blank">Beyond Clean Podcast</a>
+        </div>
       </div>
       <main className={styles.main}>
         <section className={styles.hero}>
