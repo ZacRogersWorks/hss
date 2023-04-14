@@ -11,7 +11,7 @@
   font-size: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .banner img {
@@ -21,6 +21,16 @@
 
 .banner p {
   margin: 0;
+}
+
+.bannerItem{
+  display: flex;
+  align-items: center;
+}
+
+.podcastLink {
+  font-weight: bold;
+  color: white;
 }
 
 .sectionContainer {
