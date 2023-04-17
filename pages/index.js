@@ -4,10 +4,27 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { Carousel } from "react-bootstrap";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const router = useRouter()
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const myForm = e.target;
+    const formData = new FormData(myForm)
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded"},
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then(() => router.push("/success"))
+    .catch((error) => alert(error));
+  }
 
   return (
     <>
@@ -253,7 +270,8 @@ export default function Home() {
               // method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              action="/success"
+              // action="/success"
+              onSubmit={handleSubmit}
             >
               <p className={styles.hidden}>
                 <label htmlFor="bot-field">
@@ -306,7 +324,7 @@ export default function Home() {
                 <label htmlFor="message">Message</label>
                 <textarea id="message" name="message"></textarea>
               </div>
-              <button className={styles.button} type="submit">
+              <button className={styles.button} type="button" onClick>
                 SEND
               </button>
             </form>
