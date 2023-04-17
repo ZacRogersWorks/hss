@@ -324,7 +324,7 @@ export default function Home() {
                 <label htmlFor="message">Message</label>
                 <textarea id="message" name="message"></textarea>
               </div>
-              <button className={styles.button} type="button" onClick>
+              <button className={styles.button} type="button">
                 SEND
               </button>
             </form>
