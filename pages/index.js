@@ -273,7 +273,7 @@ export default function Home() {
               data-netlify="true"
               netlify-honeypot="bot-field"
               // action="/success"
-              onSubmit={() => handleSubmit()}
+              onSubmit={handleSubmit}
             >
               <p className={styles.hidden}>
                 <label htmlFor="bot-field">
@@ -326,7 +326,7 @@ export default function Home() {
                 <label htmlFor="message">Message</label>
                 <textarea id="message" name="message"></textarea>
               </div>
-              <button className={styles.button} type="button">
+              <button className={styles.button} type="submit">
                 SEND
               </button>
             </form>
