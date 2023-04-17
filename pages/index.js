@@ -12,6 +12,8 @@ export default function Home() {
   const router = useRouter()
 
   const handleSubmit = (e) => {
+    console.log('hi'
+    )
     e.preventDefault();
 
     const myForm = e.target;
