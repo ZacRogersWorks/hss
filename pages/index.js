@@ -56,8 +56,8 @@ export default function Home() {
       </Head>
       <div className={styles.banner}>
         <div className={styles.bannerItem}>
-        <img src="/images/HSPA.png" alt="HSPA 2023" />
-        <p>See You at HSPA Nashville 2023 - Booth #1154</p>
+        <img src="/images/AC23logo.png" alt="APIC 2023" />
+        <p>See You at APIC Orlando 2023 - Booth #762</p>
         </div>
         <div className={styles.podcast}>
           <p>Listen to our feature on</p>
