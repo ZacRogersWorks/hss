@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 import { Carousel } from "react-bootstrap";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -54,20 +54,20 @@ export default function Home() {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <div className={styles.banner}>
-        <div className={styles.bannerItem}>
+      <div className="banner">
+        <div className="bannerItem">
         <img src="/images/AC23logo.png" alt="APIC 2023" />
         <p>See You at APIC Orlando 2023 - Booth #762</p>
         </div>
-        <div className={styles.podcast}>
+        <div className="podcast">
           <p>Listen to our feature on</p>
-          <a className={styles.podcastLink}href="https://traffic.libsyn.com/beyondclean/BC_HSS_VS1.mp3" target="_blank">Beyond Clean Podcast</a>
+          <a className="podcastLink" href="https://traffic.libsyn.com/beyondclean/BC_HSS_VS1.mp3" target="_blank">Beyond Clean Podcast</a>
         </div>
       </div>
-      <main className={styles.main}>
-        <section className={styles.hero}>
-          <div className={styles.sectionContainer}>
-            <div className={styles.nav}>
+      <main className="main">
+        <section className="hero">
+          <div className="sectionContainer">
+            <div className="nav">
               <img src="./images/HSS_Logo.png" alt="Virus Image" />
               <a href="tel:8448896757">
                 <svg
@@ -86,14 +86,14 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-            <div className={styles.heroContentContainer}>
-              <div className={styles.heroContent}>
+            <div className="heroContentContainer">
+              <div className="heroContent">
                 <h1>
                   Providing Solutions For A <span>Cleaner</span> And{" "}
                   <span>Safer</span> Workplace.
                 </h1>
                 <img
-                  className={styles.heroImageMobile}
+                  className="heroImageMobile"
                   src="./images/heroVirus.webp"
                   alt="Virus Image"
                 />
@@ -106,25 +106,25 @@ export default function Home() {
                   Our products are extremely relevant in SPD’s, ORs, ICUs, NICUs
                   and in other areas & other markets.
                 </p>
-                <a href="#contact" className={styles.button}>
+                <a href="#contact" className="button">
                   CONTACT NOW
                 </a>
               </div>
               <img
-                className={styles.heroImageDesktop}
+                className="heroImageDesktop"
                 src="./images/heroVirus.webp"
                 alt="Virus Image"
               />
             </div>
           </div>
         </section>
-        <section className={styles.products}>
-          <div className={styles.sectionContainer}>
+        <section className="products">
+          <div className="sectionContainer">
             <h2>Our Products</h2>
-            <div className={styles.productList}>
-              <div className={styles.product}>
+            <div className="productList">
+              <div className="product">
                 <h3>HealthGuard UVC Pass Through Chamber</h3>
-                <div className={styles.carouselContainer}>
+                <div className="carouselContainer">
                   <Carousel>
                     <Carousel.Item>
                       <img
@@ -164,16 +164,16 @@ export default function Home() {
                   </Carousel>
                 </div>
                 <a
-                  className={styles.button}
+                  className="button"
                   href="./HSS_Brochure.pdf"
                   target="_blank"
                 >
                   DOWNLOAD BROCHURE
                 </a>
               </div>
-              <div className={styles.product}>
+              <div className="product">
                 <h3>HealthGuard UVC Table Top Chamber</h3>
-                <div className={styles.carouselContainer}>
+                <div className="carouselContainer">
                   <Carousel>
                     <Carousel.Item>
                       <img
@@ -192,7 +192,7 @@ export default function Home() {
                   </Carousel>
                 </div>
                 <a
-                  className={styles.button}
+                  className="button"
                   href="./HSS_Brochure.pdf"
                   target="_blank"
                 >
@@ -202,33 +202,33 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={styles.products}>
-          <div className={styles.sectionContainer}>
+        <section className="products">
+          <div className="sectionContainer">
             <h2>AUVS Systems</h2>
-            <div className={styles.productList}>
-              <div className={styles.product}>
+            <div className="productList">
+              <div className="product">
                 <h3>AUVS UV Box</h3>
-                <div className={styles.carouselContainer}>
+                <div className="carouselContainer">
                   <img src="./images/UV_Box_1.jpg" alt="Passthrough" />
                 </div>
-                <p className={styles.tag}>
+                <p className="tag">
                   99.9997% Coronavirus Disinfection in 55 Seconds!
                 </p>
                 <a
-                  className={styles.button}
+                  className="button"
                   href="./AUVS_Box_Brochure.pdf"
                   target="_blank"
                 >
                   DOWNLOAD BROCHURE
                 </a>
               </div>
-              <div className={styles.product}>
+              <div className="product">
                 <h3>AUVS UV Cube</h3>
-                <div className={styles.carouselContainer}>
+                <div className="carouselContainer">
                   <img src="./images/UV_Cube_1.jpg" alt="Passthrough" />
                 </div>
                 <a
-                  className={styles.button}
+                  className="button"
                   href="./AUVS_Cube_Brochure.pdf"
                   target="_blank"
                 >
@@ -236,17 +236,17 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <p className={styles.comingSoon}>
+            <p className="comingSoon">
               More indoor air, office, and HVAC disinfection products COMING
               SOON!
             </p>
           </div>
         </section>
-        <section className={styles.blurb}>
-          <div className={styles.sectionContainer}>
+        <section className="blurb">
+          <div className="sectionContainer">
             <h2>What Is UV-C Light?</h2>
             <img
-              className={styles.lightIcon}
+              className="lightIcon"
               src="./images/LightIcon.png"
               alt="Light Icon"
             />
@@ -262,12 +262,12 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className={styles.contact} id="contact">
-          <div className={styles.sectionContainer}>
+        <section className="contact" id="contact">
+          <div className="sectionContainer">
             <h2>Request Information</h2>
             <a href="tel:8448896757">(844) UV-WORKS</a>
             <form
-              className={styles.form}
+              className="form"
               name="contact-form"
               // method="POST"
               data-netlify="true"
@@ -275,62 +275,62 @@ export default function Home() {
               // action="/success"
               onSubmit={handleSubmit}
             >
-              <p className={styles.hidden}>
+              <p className="hidden">
                 <label htmlFor="bot-field">
                   Disregard if you are human:
                   <input name="bot-field" />
                 </label>
               </p>
               <input type="hidden" name="form-name" value="contact-form" />
-              <div className={styles.inputLine}>
-                <div className={styles.input}>
+              <div className="inputLine">
+                <div className="input">
                   <label htmlFor="name">Name</label>
                   <input type="text" id="name" name="name" />
                 </div>
-                <div className={styles.input}>
+                <div className="input">
                   <label htmlFor="email">Email</label>
                   <input type="email" id="email" name="email" />
                 </div>
               </div>
-              <div className={styles.inputLine}>
-                <div className={styles.input}>
+              <div className="inputLine">
+                <div className="input">
                   <label htmlFor="phone">Phone</label>
                   <input type="tel" id="phone" name="phone" />
                 </div>
-                <div className={styles.input}>
+                <div className="input">
                   <label htmlFor="facility">Facility</label>
                   <input type="text" id="facility" name="facility" />
                 </div>
               </div>
-              <div className={styles.inputLine}>
-                <div className={styles.input}>
+              <div className="inputLine">
+                <div className="input">
                   <label htmlFor="address">Address</label>
                   <input type="text" id="address" name="address" />
                 </div>
-                <div className={styles.input}>
+                <div className="input">
                   <label htmlFor="city">City</label>
                   <input type="text" id="city" name="city" />
                 </div>
               </div>
-              <div className={styles.stateZip}>
-                <div className={styles.input}>
+              <div className="stateZip">
+                <div className="input">
                   <label htmlFor="state">State</label>
                   <input type="text" id="state" name="state" />
                 </div>
-                <div className={styles.input}>
+                <div className="input">
                   <label htmlFor="zip">Zip</label>
                   <input type="number" id="zip" name="zip" />
                 </div>
               </div>
-              <div className={styles.input}>
+              <div className="input">
                 <label htmlFor="message">Message</label>
                 <textarea id="message" name="message"></textarea>
               </div>
-              <button className={styles.button} type="submit">
+              <button className="button" type="submit">
                 SEND
               </button>
             </form>
-            <footer className={styles.footer}>
+            <footer className="footer">
               <img src="./images/HSS_Logo.png" alt="Logo" />
               <p>
                 848 E Main St
@@ -343,10 +343,10 @@ export default function Home() {
               <a href="mailto:info@hospitalsafetysolutions.com">
                 info@hospitalsafetysolutions.com
               </a>
-              <p className={styles.copyright}>
+              <p className="copyright">
                 © 2023 Hospital Safety Solutions - All Rights Reserved.
               </p>
-              <p className={styles.createdBy}>
+              <p className="createdBy">
                 Site designed & built by
                 <a href="www.zacrogers.works" target="_blank">
                   ZacRogers.works
