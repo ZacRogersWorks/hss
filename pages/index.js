@@ -95,6 +95,7 @@ export default function Home() {
                 <img
                   className={styles.heroImageMobile}
                   src="./images/heroVirus.webp"
+                  alt="Virus Image"
                 />
                 <p>
                   Our patented UV technologies for surface and air disinfection
@@ -112,6 +113,7 @@ export default function Home() {
               <img
                 className={styles.heroImageDesktop}
                 src="./images/heroVirus.webp"
+                alt="Virus Image"
               />
             </div>
           </div>
