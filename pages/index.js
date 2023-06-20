@@ -4,10 +4,12 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import { Carousel } from "react-bootstrap";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const router = useRouter()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,7 +22,7 @@ export default function Home() {
       headers: { "Content-Type": "application/x-www-form-urlencoded"},
       body: new URLSearchParams(formData).toString(),
     })
-    .then(() => NavigationPreloadManager("/success"))
+    .then(() => router.push("/success"))
     .catch((error) => alert(error));
   }
 
@@ -54,8 +56,8 @@ export default function Home() {
       </Head>
       <div className={styles.banner}>
         <div className={styles.bannerItem}>
-        <img src="/images/HSPA.png" alt="HSPA 2023" />
-        <p>See You at HSPA Nashville 2023 - Booth #1154</p>
+        <img src="/images/AC23logo.png" alt="APIC 2023" />
+        <p>See You at APIC Orlando 2023 - Booth #762</p>
         </div>
         <div className={styles.podcast}>
           <p>Listen to our feature on</p>
@@ -265,18 +267,19 @@ export default function Home() {
             <form
               className={styles.form}
               name="contact-form"
-              method="POST"
-              // data-netlify="true"
-              // netlify-honeypot="bot-field"
-              action="https://formspree.io/f/mlekooyr"
+              // method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              // action="/success"
+              onSubmit={handleSubmit}
             >
-              {/* <p className={styles.hidden}>
+              <p className={styles.hidden}>
                 <label htmlFor="bot-field">
                   Disregard if you are human:
                   <input name="bot-field" />
                 </label>
               </p>
-              <input type="hidden" name="form-name" value="contact-form" /> */}
+              <input type="hidden" name="form-name" value="contact-form" />
               <div className={styles.inputLine}>
                 <div className={styles.input}>
                   <label htmlFor="name">Name</label>
