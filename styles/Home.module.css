@@ -10,13 +10,14 @@
   color: white;
   font-size: 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .banner img {
   height: 75px;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
 }
 
 .banner p {
@@ -25,7 +26,12 @@
 
 .bannerItem{
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.bannerItem:first-child{
+  margin-bottom: 1rem;
 }
 
 .podcastLink {
@@ -287,6 +293,22 @@ height: 12rem;
 @media screen and (min-width: 768px) {
   .nav {
     width: 100%;
+  }
+
+  .banner {
+    flex-direction: row;
+  }
+
+  .banner img {
+    margin-right: 2rem;
+  }
+
+  .bannerItem {
+    flex-direction: row;
+  }
+
+  .bannerItem:first-child{
+    margin-bottom: 0;
   }
 
   .hero, .products, .contact {
