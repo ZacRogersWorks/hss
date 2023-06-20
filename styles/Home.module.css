@@ -1,12 +1,12 @@
 .main {
-  font-family: 'usual', sans-serif;
+  font-family: "usual", sans-serif;
   overflow-x: hidden;
 }
 
 .banner {
-  padding: .5rem;
-  background-color: #3579CE;
-  box-shadow: 7px 7px 10px -7px rgba(0,0,0,0.75);
+  padding: 0.5rem;
+  background-color: #3579ce;
+  box-shadow: 7px 7px 10px -7px rgba(0, 0, 0, 0.75);
   color: white;
   font-size: 1rem;
   display: flex;
@@ -17,20 +17,19 @@
 
 .banner img {
   height: 75px;
-  /* margin-right: 2rem; */
 }
 
 .banner p {
   margin: 0;
 }
 
-.bannerItem{
+.bannerItem {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.bannerItem:first-child{
+.bannerItem:first-child {
   margin-bottom: 1rem;
 }
 
@@ -86,18 +85,18 @@
 .button {
   display: inline-block;
   color: white;
-  background-color: #3579CE;
-  padding: .75rem 1.5rem;
+  background-color: #3579ce;
+  padding: 0.75rem 1.5rem;
   margin-top: 1rem;
   border-radius: 16px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 7px 7px 10px -7px rgba(0,0,0,0.75);
+  box-shadow: 7px 7px 10px -7px rgba(0, 0, 0, 0.75);
 }
 
 .products {
   padding: 4rem 1.5rem;
-  color: #45268D;
+  color: #45268d;
 }
 
 .products h2 {
@@ -111,15 +110,15 @@
 }
 
 .auvs {
-  color:#45268D;
+  color: #45268d;
 }
 
 .product {
-margin-top: 3rem;
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .product p {
@@ -131,7 +130,7 @@ text-align: center;
   max-width: 270px !important;
 }
 
-.carouselContainer > img{
+.carouselContainer > img {
   width: 100%;
 }
 
@@ -144,14 +143,14 @@ text-align: center;
 
 .blurb {
   padding: 0rem 1.5rem 4rem;
-  color: #45268D;
+  color: #45268d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.blurb .sectionContainer{
+.blurb .sectionContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,22 +206,23 @@ text-align: center;
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
-.input input, .input textarea {
+.input input,
+.input textarea {
   background: none;
   border: 1px solid white;
   border-radius: 16px;
   height: 3rem;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   padding: 1rem 1rem;
   color: white;
   width: 100%;
 }
 
 .input textarea {
-height: 12rem;
+  height: 12rem;
 }
 
 .stateZip {
@@ -266,7 +266,7 @@ height: 12rem;
 }
 
 .createdBy a {
-  margin-left: .25rem;
+  margin-left: 0.25rem;
 }
 
 .success {
@@ -307,11 +307,13 @@ height: 12rem;
     flex-direction: row;
   }
 
-  .bannerItem:first-child{
+  .bannerItem:first-child {
     margin-bottom: 0;
   }
 
-  .hero, .products, .contact {
+  .hero,
+  .products,
+  .contact {
     padding: 4rem 3rem 4rem;
   }
 
@@ -343,13 +345,15 @@ height: 12rem;
     width: 33%;
   }
 
- .blurb p {
+  .blurb p {
     width: 66%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .hero, .products, .contact {
+  .hero,
+  .products,
+  .contact {
     padding: 4rem 3rem 4rem;
   }
 
@@ -366,7 +370,8 @@ height: 12rem;
     margin-bottom: 1.5rem;
   }
 
-  .hero .heroContentContainer, .hero .nav {
+  .hero .heroContentContainer,
+  .hero .nav {
     transform: scaleX(-1);
   }
 
@@ -382,7 +387,7 @@ height: 12rem;
   .heroImageDesktop {
     display: block;
     width: 33%;
-    transform: scale(1.5)
+    transform: scale(1.5);
   }
 
   .productList {
@@ -396,7 +401,7 @@ height: 12rem;
 
   .comingSoon {
     width: 33%;
-    margin-top:5rem;
+    margin-top: 5rem;
   }
 
   .blurb img {
@@ -407,7 +412,7 @@ height: 12rem;
     width: 66%;
     margin: 0 auto;
   }
-  
+
   .inputLine {
     flex-direction: row;
     gap: 1rem;
