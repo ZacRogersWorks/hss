@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 import Link from 'next/link';
 import Head from 'next/head';
 
@@ -32,7 +32,7 @@ const success = () => {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-    <div className={styles.success}>
+    <div className="success">
       Email sent successfully!
       <Link href="/">Back to Home</Link>
     </div>

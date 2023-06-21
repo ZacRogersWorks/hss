@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
-import '/styles/globals.css';
-import '/styles/Home.css';
+// import './styles/globals.css';
+// import './styles/Home.css';
 
 export default function App({ Component, pageProps }) {
 

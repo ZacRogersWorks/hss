@@ -5,6 +5,8 @@ export default function Document() {
     <Html lang="en">
       <Head>
       {/* <link rel="stylesheet" href="https://use.typekit.net/dop2uqb.css" /> */}
+      <link rel="stylesheet" href="/styles/globals.css"/>
+      <link rel="stylesheet" href="/styles/Home.css"/>
       </Head>
       <body>
         <Main />

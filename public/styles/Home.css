@@ -50,7 +50,7 @@
 }
 
 .hero {
-  background-image: url(../public/images/background.webp);
+  background-image: url(/images/background.webp);
   background-position: 80%;
   background-size: cover;
   padding: 1.5rem 1.5rem 4rem;
@@ -162,7 +162,7 @@
 }
 
 .contact {
-  background-image: url("../public/images/contactBackground.webp");
+  background-image: url("/images/contactBackground.webp");
   background-position: center;
   background-size: cover;
   padding: 4rem 1.5rem 1rem;
