@@ -9,22 +9,22 @@ import { useRouter } from "next/router";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const router = useRouter()
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const myForm = e.target;
-    const formData = new FormData(myForm)
+    const formData = new FormData(myForm);
 
     fetch("/", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded"},
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-    .then(() => router.push("/success"))
-    .catch((error) => alert(error));
-  }
+      .then(() => router.push("/success"))
+      .catch((error) => alert(error));
+  };
 
   return (
     <>
@@ -56,12 +56,18 @@ export default function Home() {
       </Head>
       <div className="banner">
         <div className="bannerItem">
-        <img src="/images/AC23logo.png" alt="APIC 2023" />
-        <p>See You at APIC Orlando 2023 - Booth #762</p>
+          <img src="/images/hspa-logo-white.png" alt="HSPA 2024"/>
+          <p>See You at HSPA 2024 Las Vegas - Booth #1038</p>
         </div>
         <div className="podcast">
           <p>Listen to our feature on</p>
-          <a className="podcastLink" href="https://traffic.libsyn.com/beyondclean/BC_HSS_VS1.mp3" target="_blank">Beyond Clean Podcast</a>
+          <a
+            className="podcastLink"
+            href="https://traffic.libsyn.com/beyondclean/BC_HSS_VS1.mp3"
+            target="_blank"
+          >
+            Beyond Clean Podcast
+          </a>
         </div>
       </div>
       <main className="main">
@@ -163,11 +169,7 @@ export default function Home() {
                     </Carousel.Item>
                   </Carousel>
                 </div>
-                <a
-                  className="button"
-                  href="./HSS_Brochure.pdf"
-                  target="_blank"
-                >
+                <a className="button" href="./HSS_Brochure.pdf" target="_blank">
                   DOWNLOAD BROCHURE
                 </a>
               </div>
@@ -191,11 +193,7 @@ export default function Home() {
                     </Carousel.Item>
                   </Carousel>
                 </div>
-                <a
-                  className="button"
-                  href="./HSS_Brochure.pdf"
-                  target="_blank"
-                >
+                <a className="button" href="./HSS_Brochure.pdf" target="_blank">
                   DOWNLOAD BROCHURE
                 </a>
               </div>
