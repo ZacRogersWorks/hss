@@ -32,8 +32,12 @@ export default function Home() {
         <title>Hospital Safety Solutions</title>
         <meta
           name="description"
-          content="Providing solutions for a cleaner and safer workplace.  "
+          content="Manufacturing the UV Pass-Through Disinfection Chamber technology since 2016. UV Countertop Disinfection Stations, IAQ Specialists improving indoor room air quality, w/many units to choose from & 99.1 % 1st pass kill rates in HVAC's."
         />
+        <meta
+          name="keywords"
+          content="pass through chamber, UV, disinfection chamber, UV, pass-through chamber, UVC, pass-through chamber, IQ, indoor air quality, UV, HVAC, HVAC UV, SPD, disinfection, disinfection, sterilization, UV, disinfection, UV sterilization, UV disinfect doors, disinfection station"
+          />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="apple-touch-icon"
