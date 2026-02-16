@@ -37,7 +37,7 @@ export default function Home() {
         <meta
           name="keywords"
           content="pass through chamber, UV, disinfection chamber, UV, pass-through chamber, UVC, pass-through chamber, IQ, indoor air quality, UV, HVAC, HVAC UV, SPD, disinfection, disinfection, sterilization, UV, disinfection, UV sterilization, UV disinfect doors, disinfection station"
-          />
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="apple-touch-icon"
@@ -60,8 +60,8 @@ export default function Home() {
       </Head>
       <div className="banner">
         <div className="bannerItem">
-          <img src="/images/hspa-logo-white.png" alt="HSPA 2024"/>
-          <p>See You at HSPA 2024 Las Vegas - Booth #1038</p>
+          <img src="/images/hspa-logo-white.png" alt="HSPA 2024" />
+          <p>See You at HSPA 2026 Baltimore - Booth #327</p>
         </div>
         <div className="podcast">
           <p>Listen to our feature on</p>
@@ -100,7 +100,7 @@ export default function Home() {
               <div className="heroContent">
                 <h1>
                   Providing Solutions For A <span>Cleaner</span> And{" "}
-                  <span>Safer</span> Workplace.
+                  <span>Safer</span> Work Environment.
                 </h1>
                 <img
                   className="heroImageMobile"
@@ -133,20 +133,13 @@ export default function Home() {
             <h2>Our Products</h2>
             <div className="productList">
               <div className="product">
-                <h3>HealthGuard UVC Pass Through Chamber</h3>
+                <h3>HealthGuard-UVC® Pass Through Chamber</h3>
                 <div className="carouselContainer">
                   <Carousel>
                     <Carousel.Item>
                       <img
                         className="w-100"
                         src="./images/passthrough_1.jpg"
-                        alt="Passthrough"
-                      />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <img
-                        className="w-100"
-                        src="./images/passthrough_2.jpg"
                         alt="Passthrough"
                       />
                     </Carousel.Item>
@@ -160,7 +153,28 @@ export default function Home() {
                     <Carousel.Item>
                       <img
                         className="w-100"
+                        src="./images/image043.jpg"
+                        alt="Passthrough"
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="w-100"
+                        src="./images/image044.jpg"
+                        alt="Passthrough"
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="w-100"
                         src="./images/passthrough_4.jpg"
+                        alt="Passthrough"
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="w-100"
+                        src="./images/image050.jpg"
                         alt="Passthrough"
                       />
                     </Carousel.Item>
@@ -171,6 +185,20 @@ export default function Home() {
                         alt="Passthrough"
                       />
                     </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="w-100"
+                        src="./images/imag051.jpg"
+                        alt="Passthrough"
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        className="w-100"
+                        src="./images/image034.png"
+                        alt="Passthrough"
+                      />
+                    </Carousel.Item>
                   </Carousel>
                 </div>
                 <a className="button" href="./HSS_Brochure.pdf" target="_blank">
@@ -178,7 +206,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="product">
-                <h3>HealthGuard UVC Table Top Chamber</h3>
+                <h3>HealthGuard-UVC® Table Top Chamber</h3>
                 <div className="carouselContainer">
                   <Carousel>
                     <Carousel.Item>
@@ -228,6 +256,27 @@ export default function Home() {
                 <h3>AUVS UV Cube</h3>
                 <div className="carouselContainer">
                   <img src="./images/UV_Cube_1.jpg" alt="Passthrough" />
+                </div>
+                <a
+                  className="button"
+                  href="./AUVS_Cube_Brochure.pdf"
+                  target="_blank"
+                >
+                  DOWNLOAD BROCHURE
+                </a>
+              </div>
+            </div>
+            <div className="productList">
+              <div className="product">
+                <h3>Wall Mount</h3>
+                <div className="carouselContainer">
+                  <img src="./images/image056.jpg" alt="Wall Mount" />
+                </div>
+              </div>
+              <div className="product">
+                <h3>Recessed Mount</h3>
+                <div className="carouselContainer">
+                  <img src="./images/image057.jpg" alt="Recessed Niybt" />
                 </div>
                 <a
                   className="button"
